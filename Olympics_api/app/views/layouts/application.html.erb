@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ash's Olypmics</title>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <%= button_to "Home", root_path, :class => "btn", :method => :get %>
+</header>
+
+  <div class="container">
+
+    <%= yield %>
+
+  </div>
+
+</body>
+
+</html>

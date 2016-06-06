@@ -1,0 +1,21 @@
+<h2>Edit Page</h2>
+
+<% form_tag "/admin/edit/#{@event.id}", method: 'patch' do %>
+  <label>Sport:</label><BR />
+  <input class="std_input" name='sport_title_input' autofocus required><BR />
+  <label>Country A</label><BR />
+  <input type="text" class="std_input" name='countryA_input' required><BR />
+  <label>Country B</label><BR />
+  <input type="text" class="std_input" name='countryB_input' required><BR />
+  <label>Time:</label><BR />
+  <input type="time" class="std_input" name='time_input' required><BR />
+  <label>Date:</label><BR />
+  <input type="date" class="std_input" name='date_input' required><BR />
+  <label>Score: (Enter once the game is completed)</label><BR />
+  <input type="score" class="std_input" name='score_input'><BR />
+  <button class="button">Add</button>
+<% end %>
+
+<% form_tag "/admin/edit/#{@event.id}", method: 'destroy' do %>
+  <button class="button">Delete Event</button>
+<% end %>
