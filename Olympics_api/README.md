@@ -25,6 +25,16 @@ I'm presently building a very simple front-end to consume the API.
 
 ```
 
+### Design notes
+
+```
+1. The API is designed to follow RESTful standards. Routes should match RESTful design.
+2. Ruby Faker is used to seed the database with mock Olympic Data
+3. Where possible small isolated functions have been made available to attempt to demonstrate single responsibility design. E.g. (is_event_in_future?)
+4. Rspec is used for testing
+
+```
+
 ### Olympic Dashboard Problem
 
 The goal of this challenge is to build a Ruby API which can be used to display results and upcoming events from the next Olympics.
