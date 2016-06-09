@@ -1,28 +1,51 @@
-== README
+# Technical Test - Olympic Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### What is this?
 
-Things you may want to cover:
+This is the response to a technical test to develop an api for a mock Olympic Games.
 
-* Ruby version
+The task involves creating mock data via a seed.rb file and then making the data
+available via an API with JSON output.
 
-* System dependencies
+Developed using Ruby 2.2.2
 
-* Configuration
+### How To Run
 
-* Database creation
+```
+# Download this repository
 
-* Database initialization
+# Ensure you have ruby at least version 2.2.2 installed. (Ruby -v)
 
-* How to run the test suite
+# Navigate to the downloaded folder using a terminal
 
-* Services (job queues, cache servers, search engines, etc.)
+# Run bundle install in the folder to install dependencies
 
-* Deployment instructions
+# To run tests
+bundle exec rspec spec
 
-* ...
+# To run the application type 'rails s'. At localhost 3000 there is a basic
+# front-end that consumes the ruby API.
 
+# For learning and demonstration purposes I made an admin page with basic CRUD
+# functionality to allow the user to create mock Olypmic data.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+# This coding solution attempts to demonstrate SOLID design principals. That being
+# said I am a junior developer :).
+
+```
+
+### Olympic Dashboard Problem
+
+The goal of this challenge is to build a Ruby API which can be used to display results and upcoming events from the next Olympics.
+
+The API should support a JavaScript application to:
+
+- Display events which are coming up.
+- View the sports that are currently in progress.
+- Displays results from the previous games/races under the current sports.
+
+Eg. Basketball -> USA are currently playing Australia, 1hr ago Brazil defeated China 89-76, 2hrs ago Russia defeated Japan 102-101. Next game is USA vs Spain in 4 hours.
+
+Bonus points: Build a JavaScript application which calls the API which displays results and upcoming events.
+
+Zip all your files together for submission

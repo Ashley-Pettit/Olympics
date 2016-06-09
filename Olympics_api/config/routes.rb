@@ -1,20 +1,18 @@
 Rails.application.routes.draw do
 
-  #Home Dir
-  root 'event#index'
+  # List all
+  get '/event' => 'event#index'
 
-  #Main page
-  get 'event/index' => 'event#index'
+  # Show one
+  get '/event/:id' => 'event#show'
 
-  #Admin routes
-  get 'admin/index' => 'admin#index'
+  # Create
+  post '/events' => 'event#create'
 
-  get 'admin/new' => 'admin#new'
-  post 'admin/create' => 'admin#create'
+  # Update
+  patch '/event/:id' => 'event#update'
 
-  get 'admin/edit' => 'admin#edit'
-  patch 'admin/update' => 'admin#update'
-  delete 'admin/destroy' => 'admin#destroy'
-
+  #Delete/Destroy
+  delete '/events/:id' => 'event#delete'
 
 end
