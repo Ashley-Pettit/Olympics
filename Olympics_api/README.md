@@ -18,9 +18,10 @@ Where possible I've attempted to follow SOLID design principals.
 3. Navigate to the downloaded folder using a terminal
 4. Run bundle install in the folder to install dependencies
 5. To run tests 'bundle exec rspec spec'
-6. To run the API 'Rails s'
+6. Add the seed data 'rake db:seed'
+7. To run the API 'Rails s'
 
-# I'm presently building a very simple front-end to consume the API. 
+I'm presently building a very simple front-end to consume the API.
 
 ```
 
