@@ -1,36 +1,26 @@
-# Technical Test - Olympic Test
+# Technical Challenge - Olympic API
 
 #### What is this?
 
 This is the response to a technical test to develop an api for a mock Olympic Games.
 
-The task involves creating mock data via a seed.rb file and then making the data
-available via an API with JSON output.
+The task involves creating mock data via a seed.rb file and then making the data available via an API with JSON output.
 
-Developed using Ruby 2.2.2
+This test is designed to show RESTful API design with standard CRUD functionality.
+
+Where possible I've attempted to follow SOLID design principals.
 
 ### How To Run
 
 ```
-# Download this repository
+1. Download this repository
+2. Ensure you have ruby at least version 2.2.2 installed. (Ruby -v)
+3. Navigate to the downloaded folder using a terminal
+4. Run bundle install in the folder to install dependencies
+5. To run tests 'bundle exec rspec spec'
+6. To run the API 'Rails s'
 
-# Ensure you have ruby at least version 2.2.2 installed. (Ruby -v)
-
-# Navigate to the downloaded folder using a terminal
-
-# Run bundle install in the folder to install dependencies
-
-# To run tests
-bundle exec rspec spec
-
-# To run the application type 'rails s'. At localhost 3000 there is a basic
-# front-end that consumes the ruby API.
-
-# For learning and demonstration purposes I made an admin page with basic CRUD
-# functionality to allow the user to create mock Olypmic data.
-
-# This coding solution attempts to demonstrate SOLID design principals. That being
-# said I am a junior developer :).
+# I'm presently building a very simple front-end to consume the API. 
 
 ```
 
