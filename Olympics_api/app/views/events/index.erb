@@ -1,0 +1,9 @@
+<h2>Index</h2>
+
+  <%= form_tag "/events/results", method: 'get' do %>
+    <label>Search for a sport </label><BR />
+    <input id ="search_input" type="text"/><BR />
+    <button class="btn">Search</button>
+  <% end %>
+
+  <p> All events are shown here via JS script. Clicking on an event goes to # Show one get '/events/:id' => 'event#show' </p>

@@ -1,0 +1,8 @@
+<h2>Edit - <%=event.sport_title%></h2>
+
+<%= form_tag "/events/#{@event.id}", method: 'patch' do %>
+  <p>Edit form goes here</p>
+  <button class="btn">Update</button>
+<% end %>
+
+<%= button_to "Delete This Event", "messages/#{@event.id}", :class => "btn", :method => :destroy %>

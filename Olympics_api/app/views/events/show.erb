@@ -1,0 +1,8 @@
+<h2><%="#{@event.sport_title}"%></h2>
+
+<p>
+  Information on the individual event goes here
+</p>
+
+<%= button_to "Edit This Event", "events/#{@event.id}", :class => "btn", :method => :get %>
+<%= button_to "Delete This Event", "events/#{@event.id}", :class => "btn", :method => :destroy %>
