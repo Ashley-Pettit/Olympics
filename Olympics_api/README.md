@@ -8,7 +8,8 @@ The task involves creating mock data via a seed.rb file and then making the data
 
 This test is designed to show RESTful API design with standard CRUD functionality.
 
-Where possible I've attempted to follow SOLID design principals.
+Where possible I've attempted to follow SOLID design principals. Please note I am a junior developer! This solution is by no means perfect.
+
 
 ### How To Run
 
@@ -17,22 +18,23 @@ Where possible I've attempted to follow SOLID design principals.
 2. Ensure you have ruby at least version 2.2.2 installed. (Ruby -v)
 3. Navigate to the downloaded folder using a terminal
 4. Run bundle install in the folder to install dependencies
-5. To run tests 'bundle exec rspec spec'
-6. Add the seed data 'rake db:seed'
-7. To run the API 'Rails s'
-
-I'm presently building a very simple front-end to consume the API.
+5. Add the seed data 'rake db:seed'
+6. To run the API 'Rails s'
+7. Once the API is running a very basic front-end is available which merely shows the events available. This is a separate application yet is dependant on the API.
 
 ```
 
 ### Design notes
 
 ```
-1. The API is designed to follow RESTful standards. Routes should match RESTful design.
-2. Ruby Faker is used to seed the database with mock Olympic Data
-3. Where possible small isolated functions have been made available to attempt to demonstrate single responsibility design. E.g. (is_event_in_future?)
-4. Rspec is used for testing
-
+1. The API is designed to follow RESTful standards. Routes match RESTful design.
+2. Params are whitelisted for security purposes
+3. Verisioning is used to allow for updates to the API without causing linking applications to potentially fail.
+4. Ruby Faker is used to seed the database with mock Olympic Data. This is done by 'Rake db:seed'
+5. Where possible small isolated functions have been made available to attempt to demonstrate single responsibility design. E.g. (is_event_in_future?)
+6. Rspec is used for testing.
+7. An assumption is made that sports have a 1v1 nature E.g. Australia Vs. New Zealand. A model setup of country is available to demonstrate how the system could be developed to handle non 1v1 sports. E.g. Rowing.
+8. As this is an API focused test the JavaScript application is very minimalist. It's provided to demonstrate how an application could be built with the API data.
 ```
 
 ### Olympic Dashboard Problem
