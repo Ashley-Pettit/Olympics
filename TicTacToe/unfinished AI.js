@@ -16,7 +16,7 @@
 //  //This is loaded when the computer plays 2nd. The computer is aiming to draw.
 //   if (isComputerAbleToWin()) {
 //         //computer plays in winning cell
-//       roundWon();
+//       launchWin();
 //       console.log("computer played to win");
 //   }
 //   else if (doesComputerNeedToBlock()) {
@@ -78,7 +78,7 @@
 // //This is loaded when the computers turn is first. The computer aims to setup moves were the player will lose.
 //     if (isComputerAbleToWin()) {
 //         //computer plays in winning cell
-//         roundWon();
+//         launchWin();
 //         console.log("computer played to win");
 //     }
 //     else if (doesComputerNeedToBlock()) {

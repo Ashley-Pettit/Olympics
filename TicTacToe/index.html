@@ -55,16 +55,18 @@
                         <a class="page-scroll" id = "switch_player" href="">Switch Players</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Score</a>
+                        <a class="page-scroll" id = "scores" href="#contact">Score</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#portfolio">About</a>
+                        <a href="https://github.com/Ashley-Pettit/TicTacToe/">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
 
     <header style="min-height:100%">
         <div class="header-content">
@@ -113,7 +115,15 @@
         <div id="wonDiv"></div>
         </p>
         <p> </p>
+
+        <div id = 'scoreBox' class="header-content-inner game_options" style="margin-top:3rem; display:none">
+          <a style = "" class="btn">Scores</a>
+          <div id = 'player1ScoreBoard'>X - </div>
+          <div id = 'player2ScoreBoard'>O - </div>
+        </div>
         </header>
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
